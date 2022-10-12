@@ -1,4 +1,4 @@
-package com.example.appaffirmations.Adapter
+package com.example.appaffirmations.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -10,10 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.appaffirmations.R
 import com.example.appaffirmations.model.Affirmation
 
-class Itemadapter(
+class ItemAdapter(
     private val context: Context,
     private val dataset: List<Affirmation>
-) : RecyclerView.Adapter<Itemadapter.ItemViewHolder>() {
+) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     class ItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.item_title)
@@ -35,3 +35,4 @@ class Itemadapter(
 
     override fun getItemCount() = dataset.size
 }
+
